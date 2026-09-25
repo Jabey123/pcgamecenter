@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PC GAME CENTER — PC Games</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a class="brand" href="#top" aria-label="PC GAME CENTER home"><img src="./pictures/200b0b75-92d3-4e95-b111-888e542b7d16.webp" alt="" /><span>PC GAME CENTER</span></a>
+      <nav class="header-actions" aria-label="Store actions">
+        <label class="currency" aria-label="Choose currency"><select id="currency"><option value="GHS">🇬🇭 GHS</option><option value="NGN">🇳🇬 NGN</option><option value="USD">🇺🇸 USD</option><option value="GBP">🇬🇧 GBP</option><option value="EUR">🇪🇺 EUR</option><option value="CAD">🇨🇦 CAD</option><option value="ZAR">🇿🇦 ZAR</option><option value="KES">🇰🇪 KES</option></select></label>
+        <button class="menu-button" id="menuButton" aria-label="Open menu"><i></i><i></i><i></i></button>
+      </nav>
+    </header>
+
+    <main id="top" class="layout">
+      <section class="intro">
+        <p class="eyebrow">YOUR NEXT ADVENTURE STARTS HERE</p>
+        <h1>Game More <br />Spend Less</h1>
+        <p class="subtitle">Browse a sharp selection of PC games. Instant access, great prices, zero fuss.</p>
+      </section>
+
+      <section class="filters" aria-label="Product filters">
+        <label class="search"><span>⌕</span><input id="search" type="search" placeholder="Search games" /></label>
+        <div class="pc-only">PC GAMES ONLY</div>
+        <label class="select"><select id="sort"><option value="featured">Featured</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option></select></label>
+      </section>
+
+      <section class="products" id="products" aria-label="Game catalog"></section>
+    </main>
+
+
+    <footer>
+      <div class="footer-top">
+        <div><a class="brand footer-brand" href="#top"><img src="./pictures/200b0b75-92d3-4e95-b111-888e542b7d16.webp" alt="" /><span>PC GAME CENTER</a><p>All your favourite games in one place.</p></div>
+        <div><h2>Links</h2><a href="#top">See my orders</a><a href="#top">About</a><a href="#top">Help</a><a href="#top">Contact</a></div>
+        <div><h2>Follow us</h2><a href="#top">Facebook</a><a href="#top">Instagram</a><a href="#top">TikTok</a><a href="#top">Discord</a></div>
+      </div>
+      <div class="footer-bottom"><span>PC GAME CENTER © 2026 All rights reserved.</span><span>Rates by <a href="https://www.exchangerate-api.com" target="_blank" rel="noopener">ExchangeRate-API</a></span></div>
+    </footer>
+    <script src="data.js"></script>
+    <script src="currency.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
