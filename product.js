@@ -1,6 +1,6 @@
 const index = Number(new URLSearchParams(location.search).get('id'));
 const game = games[index];
-const whatsapp = name => `https://wa.me/233541603246?text=${encodeURIComponent(`Hi! pc gamecenter, I’d like to order ${name}, Could you please let me know the available payment methods?`)}`;
+const whatsapp = name => `https://wa.me/233595177726?text=${encodeURIComponent(`Hi! pc gamecenter, I’d like to order ${name}, Could you please let me know the available payment methods?`)}`;
 const page = document.querySelector('#productPage');
 function renderProduct() {
   if (!game) { page.innerHTML = '<section class="not-found"><h1>Game not found</h1><a class="buy-link" href="index.html">Browse all PC games</a></section>'; return; }
